@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BudgetBuddies.net Portal</title>
+    </head>
+    <body>
+        <h1>Finance Portal</h1>
+        {%for purchase in purchases%}
+            <h2>Item: {{purchase.item}}</h2>
+            <p>Total: {{purchase.total}}</p>
+            <p>Date of Purchase: {{purchase.date_recorded}}</p>
+        {% endfor %}
+    </body>
+</html>
